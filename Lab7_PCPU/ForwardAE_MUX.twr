@@ -1,0 +1,219 @@
+--------------------------------------------------------------------------------
+Release 12.3 Trace  (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml ForwardAE_MUX.twx ForwardAE_MUX.ncd -o ForwardAE_MUX.twr
+ForwardAE_MUX.pcf
+
+Design file:              ForwardAE_MUX.ncd
+Physical constraint file: ForwardAE_MUX.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2010-09-15)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ALUOutM<0>     |SrcAE<0>       |    9.232|
+ALUOutM<1>     |SrcAE<1>       |    9.622|
+ALUOutM<2>     |SrcAE<2>       |    8.727|
+ALUOutM<3>     |SrcAE<3>       |    9.057|
+ALUOutM<4>     |SrcAE<4>       |    9.211|
+ALUOutM<5>     |SrcAE<5>       |    8.575|
+ALUOutM<6>     |SrcAE<6>       |    8.750|
+ALUOutM<7>     |SrcAE<7>       |    8.977|
+ALUOutM<8>     |SrcAE<8>       |    9.282|
+ALUOutM<9>     |SrcAE<9>       |    9.154|
+ALUOutM<10>    |SrcAE<10>      |    8.836|
+ALUOutM<11>    |SrcAE<11>      |    9.597|
+ALUOutM<12>    |SrcAE<12>      |    9.246|
+ALUOutM<13>    |SrcAE<13>      |    9.973|
+ALUOutM<14>    |SrcAE<14>      |    9.561|
+ALUOutM<15>    |SrcAE<15>      |    9.233|
+ALUOutM<16>    |SrcAE<16>      |    9.002|
+ALUOutM<17>    |SrcAE<17>      |    9.786|
+ALUOutM<18>    |SrcAE<18>      |    9.398|
+ALUOutM<19>    |SrcAE<19>      |   10.103|
+ALUOutM<20>    |SrcAE<20>      |    9.329|
+ALUOutM<21>    |SrcAE<21>      |    8.647|
+ALUOutM<22>    |SrcAE<22>      |    8.725|
+ALUOutM<23>    |SrcAE<23>      |    7.456|
+ALUOutM<24>    |SrcAE<24>      |    8.433|
+ALUOutM<25>    |SrcAE<25>      |    8.980|
+ALUOutM<26>    |SrcAE<26>      |    9.341|
+ALUOutM<27>    |SrcAE<27>      |    8.715|
+ALUOutM<28>    |SrcAE<28>      |    8.638|
+ALUOutM<29>    |SrcAE<29>      |    8.577|
+ALUOutM<30>    |SrcAE<30>      |    8.135|
+ALUOutM<31>    |SrcAE<31>      |    7.612|
+ForwardAE<0>   |SrcAE<0>       |   11.997|
+ForwardAE<0>   |SrcAE<1>       |   10.529|
+ForwardAE<0>   |SrcAE<2>       |    9.389|
+ForwardAE<0>   |SrcAE<3>       |    9.348|
+ForwardAE<0>   |SrcAE<4>       |   11.739|
+ForwardAE<0>   |SrcAE<5>       |    9.866|
+ForwardAE<0>   |SrcAE<6>       |    9.563|
+ForwardAE<0>   |SrcAE<7>       |    9.699|
+ForwardAE<0>   |SrcAE<8>       |   10.164|
+ForwardAE<0>   |SrcAE<9>       |    9.248|
+ForwardAE<0>   |SrcAE<10>      |    8.447|
+ForwardAE<0>   |SrcAE<11>      |    9.712|
+ForwardAE<0>   |SrcAE<12>      |    9.621|
+ForwardAE<0>   |SrcAE<13>      |    9.874|
+ForwardAE<0>   |SrcAE<14>      |    8.931|
+ForwardAE<0>   |SrcAE<15>      |    9.724|
+ForwardAE<0>   |SrcAE<16>      |   10.011|
+ForwardAE<0>   |SrcAE<17>      |   10.874|
+ForwardAE<0>   |SrcAE<18>      |    9.741|
+ForwardAE<0>   |SrcAE<19>      |   10.264|
+ForwardAE<0>   |SrcAE<20>      |    8.765|
+ForwardAE<0>   |SrcAE<21>      |    8.624|
+ForwardAE<0>   |SrcAE<22>      |    8.905|
+ForwardAE<0>   |SrcAE<23>      |    8.212|
+ForwardAE<0>   |SrcAE<24>      |   10.140|
+ForwardAE<0>   |SrcAE<25>      |    9.992|
+ForwardAE<0>   |SrcAE<26>      |    8.906|
+ForwardAE<0>   |SrcAE<27>      |    8.714|
+ForwardAE<0>   |SrcAE<28>      |    9.884|
+ForwardAE<0>   |SrcAE<29>      |    8.728|
+ForwardAE<0>   |SrcAE<30>      |    9.097|
+ForwardAE<0>   |SrcAE<31>      |    8.387|
+ForwardAE<1>   |SrcAE<0>       |   10.763|
+ForwardAE<1>   |SrcAE<1>       |   10.841|
+ForwardAE<1>   |SrcAE<2>       |   10.151|
+ForwardAE<1>   |SrcAE<3>       |   10.412|
+ForwardAE<1>   |SrcAE<4>       |   10.686|
+ForwardAE<1>   |SrcAE<5>       |    9.516|
+ForwardAE<1>   |SrcAE<6>       |   10.659|
+ForwardAE<1>   |SrcAE<7>       |    9.620|
+ForwardAE<1>   |SrcAE<8>       |   10.752|
+ForwardAE<1>   |SrcAE<9>       |   10.480|
+ForwardAE<1>   |SrcAE<10>      |    8.878|
+ForwardAE<1>   |SrcAE<11>      |    9.563|
+ForwardAE<1>   |SrcAE<12>      |    9.355|
+ForwardAE<1>   |SrcAE<13>      |    9.530|
+ForwardAE<1>   |SrcAE<14>      |    8.970|
+ForwardAE<1>   |SrcAE<15>      |    9.922|
+ForwardAE<1>   |SrcAE<16>      |    9.282|
+ForwardAE<1>   |SrcAE<17>      |   10.660|
+ForwardAE<1>   |SrcAE<18>      |    9.934|
+ForwardAE<1>   |SrcAE<19>      |   10.075|
+ForwardAE<1>   |SrcAE<20>      |    9.412|
+ForwardAE<1>   |SrcAE<21>      |    9.342|
+ForwardAE<1>   |SrcAE<22>      |    9.166|
+ForwardAE<1>   |SrcAE<23>      |    8.710|
+ForwardAE<1>   |SrcAE<24>      |    9.508|
+ForwardAE<1>   |SrcAE<25>      |    9.491|
+ForwardAE<1>   |SrcAE<26>      |    8.961|
+ForwardAE<1>   |SrcAE<27>      |    8.711|
+ForwardAE<1>   |SrcAE<28>      |    9.062|
+ForwardAE<1>   |SrcAE<29>      |    9.499|
+ForwardAE<1>   |SrcAE<30>      |    8.564|
+ForwardAE<1>   |SrcAE<31>      |    9.166|
+RD1_out<0>     |SrcAE<0>       |    7.703|
+RD1_out<1>     |SrcAE<1>       |    7.358|
+RD1_out<2>     |SrcAE<2>       |    8.002|
+RD1_out<3>     |SrcAE<3>       |    7.600|
+RD1_out<4>     |SrcAE<4>       |    6.985|
+RD1_out<5>     |SrcAE<5>       |    6.652|
+RD1_out<6>     |SrcAE<6>       |    7.305|
+RD1_out<7>     |SrcAE<7>       |    8.076|
+RD1_out<8>     |SrcAE<8>       |    7.791|
+RD1_out<9>     |SrcAE<9>       |    7.642|
+RD1_out<10>    |SrcAE<10>      |    7.324|
+RD1_out<11>    |SrcAE<11>      |    9.433|
+RD1_out<12>    |SrcAE<12>      |    8.737|
+RD1_out<13>    |SrcAE<13>      |    8.366|
+RD1_out<14>    |SrcAE<14>      |    8.229|
+RD1_out<15>    |SrcAE<15>      |    8.047|
+RD1_out<16>    |SrcAE<16>      |    7.755|
+RD1_out<17>    |SrcAE<17>      |    8.563|
+RD1_out<18>    |SrcAE<18>      |    8.221|
+RD1_out<19>    |SrcAE<19>      |    8.707|
+RD1_out<20>    |SrcAE<20>      |    8.389|
+RD1_out<21>    |SrcAE<21>      |    7.835|
+RD1_out<22>    |SrcAE<22>      |    7.810|
+RD1_out<23>    |SrcAE<23>      |    6.645|
+RD1_out<24>    |SrcAE<24>      |    7.567|
+RD1_out<25>    |SrcAE<25>      |    8.003|
+RD1_out<26>    |SrcAE<26>      |    7.695|
+RD1_out<27>    |SrcAE<27>      |    7.255|
+RD1_out<28>    |SrcAE<28>      |    7.464|
+RD1_out<29>    |SrcAE<29>      |    7.495|
+RD1_out<30>    |SrcAE<30>      |    7.447|
+RD1_out<31>    |SrcAE<31>      |    6.596|
+ResultW<0>     |SrcAE<0>       |    8.297|
+ResultW<1>     |SrcAE<1>       |    8.305|
+ResultW<2>     |SrcAE<2>       |    8.278|
+ResultW<3>     |SrcAE<3>       |    8.021|
+ResultW<4>     |SrcAE<4>       |    8.764|
+ResultW<5>     |SrcAE<5>       |    6.753|
+ResultW<6>     |SrcAE<6>       |    7.539|
+ResultW<7>     |SrcAE<7>       |    8.855|
+ResultW<8>     |SrcAE<8>       |    8.043|
+ResultW<9>     |SrcAE<9>       |    7.834|
+ResultW<10>    |SrcAE<10>      |    8.117|
+ResultW<11>    |SrcAE<11>      |    8.891|
+ResultW<12>    |SrcAE<12>      |    8.319|
+ResultW<13>    |SrcAE<13>      |    8.933|
+ResultW<14>    |SrcAE<14>      |    7.515|
+ResultW<15>    |SrcAE<15>      |    8.344|
+ResultW<16>    |SrcAE<16>      |    8.493|
+ResultW<17>    |SrcAE<17>      |    9.281|
+ResultW<18>    |SrcAE<18>      |    8.730|
+ResultW<19>    |SrcAE<19>      |    9.660|
+ResultW<20>    |SrcAE<20>      |    8.876|
+ResultW<21>    |SrcAE<21>      |    8.804|
+ResultW<22>    |SrcAE<22>      |    8.305|
+ResultW<23>    |SrcAE<23>      |    6.952|
+ResultW<24>    |SrcAE<24>      |    8.408|
+ResultW<25>    |SrcAE<25>      |    8.800|
+ResultW<26>    |SrcAE<26>      |    7.989|
+ResultW<27>    |SrcAE<27>      |    8.495|
+ResultW<28>    |SrcAE<28>      |    8.453|
+ResultW<29>    |SrcAE<29>      |    8.263|
+ResultW<30>    |SrcAE<30>      |    7.880|
+ResultW<31>    |SrcAE<31>      |    7.175|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Jun 06 14:12:52 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 125 MB
+
+
+

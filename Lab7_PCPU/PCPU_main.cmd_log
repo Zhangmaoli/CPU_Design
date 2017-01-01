@@ -1,0 +1,26 @@
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "PCPU_main.ngc" PCPU_main.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o PCPU_main_map.ncd PCPU_main.ngd PCPU_main.pcf 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "PCPU_main.ngc" PCPU_main.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o PCPU_main_map.ncd PCPU_main.ngd PCPU_main.pcf 
+par -w -intstyle ise -ol high -t 1 PCPU_main_map.ncd PCPU_main.ncd PCPU_main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PCPU_main.twx PCPU_main.ncd -o PCPU_main.twr PCPU_main.pcf 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "PCPU_main.ngc" PCPU_main.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o PCPU_main_map.ncd PCPU_main.ngd PCPU_main.pcf 
+par -w -intstyle ise -ol high -t 1 PCPU_main_map.ncd PCPU_main.ncd PCPU_main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PCPU_main.twx PCPU_main.ncd -o PCPU_main.twr PCPU_main.pcf 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCPU_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "PCPU_main.ngc" PCPU_main.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o PCPU_main_map.ncd PCPU_main.ngd PCPU_main.pcf 
+par -w -intstyle ise -ol high -t 1 PCPU_main_map.ncd PCPU_main.ncd PCPU_main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PCPU_main.twx PCPU_main.ncd -o PCPU_main.twr PCPU_main.pcf 

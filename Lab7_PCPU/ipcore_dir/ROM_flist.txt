@@ -1,0 +1,18 @@
+# Output products list for <ROM>
+ROM.asy
+ROM.gise
+ROM.mif
+ROM.ngc
+ROM.sym
+ROM.v
+ROM.veo
+ROM.vhd
+ROM.vho
+ROM.xco
+ROM.xise
+ROM_flist.txt
+ROM_readme.txt
+ROM_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+dist_mem_gen_ds322.pdf
+dist_mem_gen_readme.txt

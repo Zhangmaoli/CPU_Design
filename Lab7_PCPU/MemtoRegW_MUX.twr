@@ -1,0 +1,155 @@
+--------------------------------------------------------------------------------
+Release 12.3 Trace  (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml MemtoRegW_MUX.twx MemtoRegW_MUX.ncd -o MemtoRegW_MUX.twr
+MemtoRegW_MUX.pcf
+
+Design file:              MemtoRegW_MUX.ncd
+Physical constraint file: MemtoRegW_MUX.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2010-09-15)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ALUOutW<0>     |ResultW<0>     |    6.662|
+ALUOutW<1>     |ResultW<1>     |    7.841|
+ALUOutW<2>     |ResultW<2>     |    8.209|
+ALUOutW<3>     |ResultW<3>     |    7.647|
+ALUOutW<4>     |ResultW<4>     |    6.596|
+ALUOutW<5>     |ResultW<5>     |    6.805|
+ALUOutW<6>     |ResultW<6>     |    6.822|
+ALUOutW<7>     |ResultW<7>     |    6.807|
+ALUOutW<8>     |ResultW<8>     |    8.100|
+ALUOutW<9>     |ResultW<9>     |    7.877|
+ALUOutW<10>    |ResultW<10>    |    7.405|
+ALUOutW<11>    |ResultW<11>    |    6.583|
+ALUOutW<12>    |ResultW<12>    |    6.281|
+ALUOutW<13>    |ResultW<13>    |    8.252|
+ALUOutW<14>    |ResultW<14>    |    6.070|
+ALUOutW<15>    |ResultW<15>    |    6.312|
+ALUOutW<16>    |ResultW<16>    |    6.055|
+ALUOutW<17>    |ResultW<17>    |    6.236|
+ALUOutW<18>    |ResultW<18>    |    6.245|
+ALUOutW<19>    |ResultW<19>    |    6.553|
+ALUOutW<20>    |ResultW<20>    |    6.003|
+ALUOutW<21>    |ResultW<21>    |    6.416|
+ALUOutW<22>    |ResultW<22>    |    7.645|
+ALUOutW<23>    |ResultW<23>    |    6.338|
+ALUOutW<24>    |ResultW<24>    |    6.121|
+ALUOutW<25>    |ResultW<25>    |    7.932|
+ALUOutW<26>    |ResultW<26>    |    6.969|
+ALUOutW<27>    |ResultW<27>    |    6.746|
+ALUOutW<28>    |ResultW<28>    |    8.944|
+ALUOutW<29>    |ResultW<29>    |    9.206|
+ALUOutW<30>    |ResultW<30>    |    6.650|
+ALUOutW<31>    |ResultW<31>    |    6.021|
+MemtoRegW      |ResultW<0>     |    8.326|
+MemtoRegW      |ResultW<1>     |    9.132|
+MemtoRegW      |ResultW<2>     |    9.701|
+MemtoRegW      |ResultW<3>     |    9.732|
+MemtoRegW      |ResultW<4>     |    8.459|
+MemtoRegW      |ResultW<5>     |    8.118|
+MemtoRegW      |ResultW<6>     |    8.829|
+MemtoRegW      |ResultW<7>     |    8.561|
+MemtoRegW      |ResultW<8>     |    8.549|
+MemtoRegW      |ResultW<9>     |    8.315|
+MemtoRegW      |ResultW<10>    |    7.575|
+MemtoRegW      |ResultW<11>    |    8.386|
+MemtoRegW      |ResultW<12>    |    8.628|
+MemtoRegW      |ResultW<13>    |    9.767|
+MemtoRegW      |ResultW<14>    |    6.125|
+MemtoRegW      |ResultW<15>    |    7.313|
+MemtoRegW      |ResultW<16>    |    6.427|
+MemtoRegW      |ResultW<17>    |    6.305|
+MemtoRegW      |ResultW<18>    |    6.266|
+MemtoRegW      |ResultW<19>    |    6.205|
+MemtoRegW      |ResultW<20>    |    7.813|
+MemtoRegW      |ResultW<21>    |    6.739|
+MemtoRegW      |ResultW<22>    |    7.331|
+MemtoRegW      |ResultW<23>    |    5.860|
+MemtoRegW      |ResultW<24>    |    6.020|
+MemtoRegW      |ResultW<25>    |    9.184|
+MemtoRegW      |ResultW<26>    |    6.726|
+MemtoRegW      |ResultW<27>    |    6.429|
+MemtoRegW      |ResultW<28>    |    9.487|
+MemtoRegW      |ResultW<29>    |    8.839|
+MemtoRegW      |ResultW<30>    |    6.700|
+MemtoRegW      |ResultW<31>    |    6.091|
+ReadDataW<0>   |ResultW<0>     |    6.863|
+ReadDataW<1>   |ResultW<1>     |    8.457|
+ReadDataW<2>   |ResultW<2>     |    8.252|
+ReadDataW<3>   |ResultW<3>     |    8.414|
+ReadDataW<4>   |ResultW<4>     |    6.859|
+ReadDataW<5>   |ResultW<5>     |    6.378|
+ReadDataW<6>   |ResultW<6>     |    6.528|
+ReadDataW<7>   |ResultW<7>     |    6.739|
+ReadDataW<8>   |ResultW<8>     |    6.904|
+ReadDataW<9>   |ResultW<9>     |    7.241|
+ReadDataW<10>  |ResultW<10>    |    6.277|
+ReadDataW<11>  |ResultW<11>    |    6.361|
+ReadDataW<12>  |ResultW<12>    |    6.925|
+ReadDataW<13>  |ResultW<13>    |    9.526|
+ReadDataW<14>  |ResultW<14>    |    5.904|
+ReadDataW<15>  |ResultW<15>    |    7.929|
+ReadDataW<16>  |ResultW<16>    |    6.575|
+ReadDataW<17>  |ResultW<17>    |    5.863|
+ReadDataW<18>  |ResultW<18>    |    6.602|
+ReadDataW<19>  |ResultW<19>    |    5.740|
+ReadDataW<20>  |ResultW<20>    |    6.107|
+ReadDataW<21>  |ResultW<21>    |    6.943|
+ReadDataW<22>  |ResultW<22>    |    6.677|
+ReadDataW<23>  |ResultW<23>    |    5.219|
+ReadDataW<24>  |ResultW<24>    |    5.524|
+ReadDataW<25>  |ResultW<25>    |    7.256|
+ReadDataW<26>  |ResultW<26>    |    6.522|
+ReadDataW<27>  |ResultW<27>    |    5.997|
+ReadDataW<28>  |ResultW<28>    |    7.107|
+ReadDataW<29>  |ResultW<29>    |    6.980|
+ReadDataW<30>  |ResultW<30>    |    6.227|
+ReadDataW<31>  |ResultW<31>    |    5.546|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Jun 05 11:03:26 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 125 MB
+
+
+

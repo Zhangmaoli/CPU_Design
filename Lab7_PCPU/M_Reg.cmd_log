@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/M_Reg.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/M_Reg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "M_Reg.ngc" M_Reg.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o M_Reg_map.ncd M_Reg.ngd M_Reg.pcf 
+par -w -intstyle ise -ol high -t 1 M_Reg_map.ncd M_Reg.ncd M_Reg.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml M_Reg.twx M_Reg.ncd -o M_Reg.twr M_Reg.pcf 

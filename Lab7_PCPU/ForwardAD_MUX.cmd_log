@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/ForwardAD_MUX.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/ForwardAD_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "ForwardAD_MUX.ngc" ForwardAD_MUX.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ForwardAD_MUX_map.ncd ForwardAD_MUX.ngd ForwardAD_MUX.pcf 
+par -w -intstyle ise -ol high -t 1 ForwardAD_MUX_map.ncd ForwardAD_MUX.ncd ForwardAD_MUX.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ForwardAD_MUX.twx ForwardAD_MUX.ncd -o ForwardAD_MUX.twr ForwardAD_MUX.pcf 

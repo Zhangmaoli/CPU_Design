@@ -1,0 +1,216 @@
+ISim log file
+Running: D:\Verilog HDL\Lab7_PCPU\test_isim_beh.exe -gui -tclbatch isim.cmd -wdb D:/Verilog HDL/Lab7_PCPU/test_isim_beh.wdb 
+ISim M.70d (signature 0x36e8438f)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+# step
+Stopped at time : 1005 ns : File "D:/Verilog HDL/Lab7_PCPU/test.v" Line 53
+# step
+Stopped at time : 1005 ns : File "D:/Verilog HDL/Lab7_PCPU/test.v" Line 53
+# run 10.00ns
+# restart
+# run 10.00ns
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# restart
+# run 100.00ns
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+# run 100.00ns
+# restart
+# run 100.00ns
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# restart
+# run 100.00ns
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# restart
+# run 100.00ns
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# restart
+# run 100.00ns
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns

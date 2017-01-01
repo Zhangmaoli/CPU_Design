@@ -1,0 +1,101 @@
+--------------------------------------------------------------------------------
+Release 12.3 Trace  (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml PCSrcD_MUX.twx PCSrcD_MUX.ncd -o PCSrcD_MUX.twr
+PCSrcD_MUX.pcf
+
+Design file:              PCSrcD_MUX.ncd
+Physical constraint file: PCSrcD_MUX.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2010-09-15)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+JR<0>          |PC<0>          |    6.424|
+JR<1>          |PC<1>          |    5.795|
+JR<2>          |PC<2>          |    5.954|
+JR<3>          |PC<3>          |    5.771|
+JR<4>          |PC<4>          |    5.770|
+JR<5>          |PC<5>          |    5.854|
+JR<6>          |PC<6>          |    6.189|
+PCSrcD<0>      |PC<0>          |    7.593|
+PCSrcD<0>      |PC<1>          |    6.739|
+PCSrcD<0>      |PC<2>          |    6.740|
+PCSrcD<0>      |PC<3>          |    6.881|
+PCSrcD<0>      |PC<4>          |    5.982|
+PCSrcD<0>      |PC<5>          |    5.996|
+PCSrcD<0>      |PC<6>          |    6.580|
+PCSrcD<1>      |PC<0>          |    6.225|
+PCSrcD<1>      |PC<1>          |    6.080|
+PCSrcD<1>      |PC<2>          |    6.201|
+PCSrcD<1>      |PC<3>          |    6.542|
+PCSrcD<1>      |PC<4>          |    6.975|
+PCSrcD<1>      |PC<5>          |    6.725|
+PCSrcD<1>      |PC<6>          |    7.477|
+PC_BranchD<0>  |PC<0>          |    6.148|
+PC_BranchD<1>  |PC<1>          |    5.939|
+PC_BranchD<2>  |PC<2>          |    6.731|
+PC_BranchD<3>  |PC<3>          |    6.378|
+PC_BranchD<4>  |PC<4>          |    6.467|
+PC_BranchD<5>  |PC<5>          |    6.145|
+PC_BranchD<6>  |PC<6>          |    6.661|
+PC_plus1F<0>   |PC<0>          |    6.721|
+PC_plus1F<1>   |PC<1>          |    6.518|
+PC_plus1F<2>   |PC<2>          |    6.870|
+PC_plus1F<3>   |PC<3>          |    6.448|
+PC_plus1F<4>   |PC<4>          |    6.638|
+PC_plus1F<5>   |PC<5>          |    7.208|
+PC_plus1F<6>   |PC<6>          |    7.119|
+ins_extend<0>  |PC<0>          |    6.266|
+ins_extend<1>  |PC<1>          |    5.727|
+ins_extend<2>  |PC<2>          |    6.095|
+ins_extend<3>  |PC<3>          |    5.857|
+ins_extend<4>  |PC<4>          |    6.059|
+ins_extend<5>  |PC<5>          |    5.771|
+ins_extend<6>  |PC<6>          |    6.051|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Jun 05 10:52:26 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 124 MB
+
+
+

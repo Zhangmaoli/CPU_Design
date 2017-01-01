@@ -1,0 +1,413 @@
+Release 12.3 - xst M.70d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: RegFile.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RegFile.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RegFile"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : RegFile
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "RegFile.v" in library work
+Module <RegFile> compiled
+No errors in compilation
+Analysis of file <"RegFile.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <RegFile> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <RegFile>.
+Module <RegFile> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <i> in unit <RegFile> has a constant value of 100000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <RegFile>.
+    Related source file is "RegFile.v".
+    Found 32-bit 32-to-1 multiplexer for signal <r1_dout>.
+    Found 32-bit 32-to-1 multiplexer for signal <r2_dout>.
+    Found 1024-bit register for signal <mem>.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <mem>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  96 Multiplexer(s).
+Unit <RegFile> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 32
+ 32-bit register                                       : 32
+# Multiplexers                                         : 3
+ 32-bit 32-to-1 multiplexer                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Multiplexers                                         : 3
+ 32-bit 32-to-1 multiplexer                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RegFile> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RegFile, actual ratio is 29.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RegFile.ngr
+Top Level Output File Name         : RegFile
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 114
+
+Cell Usage :
+# BELS                             : 3082
+#      BUF                         : 3
+#      INV                         : 3
+#      LUT2                        : 4
+#      LUT3                        : 1600
+#      LUT4                        : 32
+#      MUXF5                       : 768
+#      MUXF6                       : 384
+#      MUXF7                       : 192
+#      MUXF8                       : 96
+# FlipFlops/Latches                : 1024
+#      FDCE                        : 1024
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 113
+#      IBUF                        : 49
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                     1357  out of   4656    29%  
+ Number of Slice Flip Flops:           1024  out of   9312    10%  
+ Number of 4 input LUTs:               1639  out of   9312    17%  
+ Number of IOs:                         114
+ Number of bonded IOBs:                 114  out of    232    49%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1024  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------+------------------------+-------+
+Control Signal                              | Buffer(FF name)        | Load  |
+--------------------------------------------+------------------------+-------+
+rst_n_inv(rst_n_inv321_INV_0:O)             | NONE(mem_0_0)          | 342   |
+rst_n_inv321_INV_0_1(rst_n_inv321_INV_0_1:O)| NONE(mem_29_19)        | 341   |
+rst_n_inv321_INV_0_2(rst_n_inv321_INV_0_2:O)| NONE(mem_19_29)        | 341   |
+--------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.567ns (Maximum Frequency: 218.948MHz)
+   Minimum input arrival time before clock: 7.678ns
+   Maximum output required time after clock: 6.803ns
+   Maximum combinational path delay: 9.905ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.567ns (frequency: 218.948MHz)
+  Total number of paths / destination ports: 32768 / 1024
+-------------------------------------------------------------------------
+Delay:               4.567ns (Levels of Logic = 6)
+  Source:            mem_0_0 (FF)
+  Destination:       mem_2_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: mem_0_0 to mem_2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.514   0.520  mem_0_0 (mem_0_0)
+     LUT3:I1->O            1   0.612   0.000  Mmux__COND_1_10 (Mmux__COND_1_10)
+     MUXF5:I0->O           1   0.278   0.000  Mmux__COND_1_8_f5 (Mmux__COND_1_8_f5)
+     MUXF6:I0->O           1   0.451   0.000  Mmux__COND_1_6_f6 (Mmux__COND_1_6_f6)
+     MUXF7:I0->O           1   0.451   0.000  Mmux__COND_1_4_f7 (Mmux__COND_1_4_f7)
+     MUXF8:I0->O           2   0.451   0.410  Mmux__COND_1_2_f8 (_COND_1<0>)
+     LUT3:I2->O           16   0.612   0.000  mem_0_mux0000<0>1 (mem_0_mux0000<0>)
+     FDCE:D                    0.268          mem_16_0
+    ----------------------------------------
+    Total                      4.567ns (3.637ns logic, 0.930ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 38912 / 2048
+-------------------------------------------------------------------------
+Offset:              7.678ns (Levels of Logic = 8)
+  Source:            r3_addr<0> (PAD)
+  Destination:       mem_2_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: r3_addr<0> to mem_2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           272   1.106   1.137  r3_addr_0_IBUF (r3_addr_0_IBUF)
+     BUF:I->O            273   0.612   1.290  r3_addr_0_IBUF_1 (r3_addr_0_IBUF_1)
+     LUT3:I0->O            1   0.612   0.000  Mmux__COND_1_999 (Mmux__COND_1_999)
+     MUXF5:I1->O           1   0.278   0.000  Mmux__COND_1_8_f5_23 (Mmux__COND_1_8_f524)
+     MUXF6:I0->O           1   0.451   0.000  Mmux__COND_1_6_f6_23 (Mmux__COND_1_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux__COND_1_4_f7_23 (Mmux__COND_1_4_f724)
+     MUXF8:I0->O           2   0.451   0.410  Mmux__COND_1_2_f8_23 (_COND_1<31>)
+     LUT3:I2->O           16   0.612   0.000  mem_0_mux0000<31>1 (mem_0_mux0000<31>)
+     FDCE:D                    0.268          mem_16_31
+    ----------------------------------------
+    Total                      7.678ns (4.841ns logic, 2.837ns route)
+                                       (63.1% logic, 36.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2048 / 64
+-------------------------------------------------------------------------
+Offset:              6.803ns (Levels of Logic = 6)
+  Source:            mem_0_31 (FF)
+  Destination:       r1_dout<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: mem_0_31 to r1_dout<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.514   0.520  mem_0_31 (mem_0_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_r2_dout_1024 (Mmux_r2_dout_1024)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_r2_dout_8_f5_23 (Mmux_r2_dout_8_f524)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_r2_dout_6_f6_23 (Mmux_r2_dout_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_r2_dout_4_f7_23 (Mmux_r2_dout_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_r2_dout_2_f8_23 (r2_dout_31_OBUF)
+     OBUF:I->O                 3.169          r2_dout_31_OBUF (r2_dout<31>)
+    ----------------------------------------
+    Total                      6.803ns (5.926ns logic, 0.877ns route)
+                                       (87.1% logic, 12.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1984 / 64
+-------------------------------------------------------------------------
+Delay:               9.905ns (Levels of Logic = 8)
+  Source:            r1_addr<0> (PAD)
+  Destination:       r1_dout<31> (PAD)
+
+  Data Path: r1_addr<0> to r1_dout<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           256   1.106   1.133  r1_addr_0_IBUF (r1_addr_0_IBUF)
+     BUF:I->O            257   0.612   1.285  r1_addr_0_IBUF_1 (r1_addr_0_IBUF_1)
+     LUT3:I0->O            1   0.612   0.000  Mmux_r1_dout_999 (Mmux_r1_dout_999)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_r1_dout_8_f5_23 (Mmux_r1_dout_8_f524)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_r1_dout_6_f6_23 (Mmux_r1_dout_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_r1_dout_4_f7_23 (Mmux_r1_dout_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_r1_dout_2_f8_23 (r1_dout_31_OBUF)
+     OBUF:I->O                 3.169          r1_dout_31_OBUF (r1_dout<31>)
+    ----------------------------------------
+    Total                      9.905ns (7.130ns logic, 2.775ns route)
+                                       (72.0% logic, 28.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.61 secs
+ 
+--> 
+
+Total memory usage is 196064 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

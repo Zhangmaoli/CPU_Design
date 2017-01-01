@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/ForwardBE_MUX.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/ForwardBE_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "ForwardBE_MUX.ngc" ForwardBE_MUX.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ForwardBE_MUX_map.ncd ForwardBE_MUX.ngd ForwardBE_MUX.pcf 
+par -w -intstyle ise -ol high -t 1 ForwardBE_MUX_map.ncd ForwardBE_MUX.ncd ForwardBE_MUX.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ForwardBE_MUX.twx ForwardBE_MUX.ncd -o ForwardBE_MUX.twr ForwardBE_MUX.pcf 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/ForwardBE_MUX.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/ForwardBE_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "ForwardBE_MUX.ngc" ForwardBE_MUX.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ForwardBE_MUX_map.ncd ForwardBE_MUX.ngd ForwardBE_MUX.pcf 
+par -w -intstyle ise -ol high -t 1 ForwardBE_MUX_map.ncd ForwardBE_MUX.ncd ForwardBE_MUX.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ForwardBE_MUX.twx ForwardBE_MUX.ncd -o ForwardBE_MUX.twr ForwardBE_MUX.pcf 
+xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/ForwardBE_MUX.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/ForwardBE_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "ForwardBE_MUX.ngc" ForwardBE_MUX.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ForwardBE_MUX_map.ncd ForwardBE_MUX.ngd ForwardBE_MUX.pcf 
+par -w -intstyle ise -ol high -t 1 ForwardBE_MUX_map.ncd ForwardBE_MUX.ncd ForwardBE_MUX.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ForwardBE_MUX.twx ForwardBE_MUX.ncd -o ForwardBE_MUX.twr ForwardBE_MUX.pcf 

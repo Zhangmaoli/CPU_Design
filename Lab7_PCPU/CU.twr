@@ -1,0 +1,157 @@
+--------------------------------------------------------------------------------
+Release 12.3 Trace  (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml CU.twx CU.ncd -o CU.twr CU.pcf
+
+Design file:              CU.ncd
+Physical constraint file: CU.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2010-09-15)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Funct<0>       |ALUControlD<0> |    9.178|
+Funct<0>       |ALUControlD<1> |    6.961|
+Funct<0>       |ALUControlD<2> |    6.774|
+Funct<0>       |ALUControlD<3> |    8.669|
+Funct<0>       |RegDstD        |    7.290|
+Funct<0>       |RegWriteD      |    8.083|
+Funct<1>       |ALUControlD<0> |    9.222|
+Funct<1>       |ALUControlD<1> |    7.095|
+Funct<1>       |ALUControlD<2> |    6.948|
+Funct<1>       |ALUControlD<3> |    8.635|
+Funct<1>       |RegDstD        |    7.271|
+Funct<1>       |RegWriteD      |    8.064|
+Funct<2>       |ALUControlD<0> |    9.033|
+Funct<2>       |ALUControlD<1> |    7.380|
+Funct<2>       |ALUControlD<2> |    7.210|
+Funct<2>       |ALUControlD<3> |    8.918|
+Funct<2>       |RegDstD        |    7.217|
+Funct<2>       |RegWriteD      |    8.010|
+Funct<3>       |ALUControlD<0> |    9.639|
+Funct<3>       |ALUControlD<1> |    6.911|
+Funct<3>       |ALUControlD<2> |    7.918|
+Funct<3>       |ALUControlD<3> |    9.605|
+Funct<3>       |RegDstD        |    7.877|
+Funct<3>       |RegWriteD      |    8.670|
+Funct<4>       |ALUControlD<0> |    8.162|
+Funct<4>       |ALUControlD<1> |    7.488|
+Funct<4>       |ALUControlD<2> |    7.217|
+Funct<4>       |ALUControlD<3> |    8.569|
+Funct<4>       |RegDstD        |    6.646|
+Funct<4>       |RegWriteD      |    7.439|
+Funct<5>       |ALUControlD<0> |    9.576|
+Funct<5>       |ALUControlD<1> |    7.466|
+Funct<5>       |ALUControlD<2> |    6.019|
+Funct<5>       |ALUControlD<3> |    9.033|
+Funct<5>       |RegDstD        |    7.448|
+Funct<5>       |RegWriteD      |    8.241|
+Op<0>          |ALUControlD<0> |    8.604|
+Op<0>          |ALUControlD<1> |    8.142|
+Op<0>          |ALUControlD<2> |    7.871|
+Op<0>          |ALUControlD<3> |    9.223|
+Op<0>          |ALUSrcD        |    8.992|
+Op<0>          |MemWriteD      |    9.027|
+Op<0>          |MemtoRegD      |    8.932|
+Op<0>          |RegDstD        |    7.300|
+Op<0>          |RegWriteD      |    9.587|
+Op<1>          |ALUControlD<0> |    8.137|
+Op<1>          |ALUControlD<1> |    7.099|
+Op<1>          |ALUControlD<2> |    6.828|
+Op<1>          |ALUControlD<3> |    8.180|
+Op<1>          |ALUSrcD        |    7.827|
+Op<1>          |MemWriteD      |    7.862|
+Op<1>          |MemtoRegD      |    7.767|
+Op<1>          |RegDstD        |    6.257|
+Op<1>          |RegWriteD      |    8.422|
+Op<2>          |ALUControlD<0> |    7.449|
+Op<2>          |ALUControlD<1> |    7.010|
+Op<2>          |ALUControlD<2> |    6.739|
+Op<2>          |ALUControlD<3> |    8.091|
+Op<2>          |ALUSrcD        |    7.837|
+Op<2>          |MemWriteD      |    7.872|
+Op<2>          |MemtoRegD      |    7.777|
+Op<2>          |RegDstD        |    6.168|
+Op<2>          |RegWriteD      |    8.432|
+Op<3>          |ALUControlD<0> |    9.419|
+Op<3>          |ALUControlD<1> |    6.965|
+Op<3>          |ALUControlD<2> |    6.855|
+Op<3>          |ALUControlD<3> |    7.854|
+Op<3>          |ALUSrcD        |    5.743|
+Op<3>          |MemWriteD      |    5.772|
+Op<3>          |MemtoRegD      |    6.366|
+Op<3>          |RegDstD        |    6.045|
+Op<3>          |RegWriteD      |    7.046|
+Op<4>          |ALUControlD<0> |    6.701|
+Op<4>          |ALUControlD<1> |    7.782|
+Op<4>          |ALUControlD<2> |    7.511|
+Op<4>          |ALUControlD<3> |    6.188|
+Op<4>          |ALUSrcD        |    6.674|
+Op<4>          |MemWriteD      |    6.709|
+Op<4>          |MemtoRegD      |    6.614|
+Op<4>          |RegDstD        |    6.591|
+Op<4>          |RegWriteD      |    7.269|
+Op<5>          |ALUControlD<0> |    6.613|
+Op<5>          |ALUControlD<1> |    7.694|
+Op<5>          |ALUControlD<2> |    7.423|
+Op<5>          |ALUControlD<3> |    6.222|
+Op<5>          |ALUSrcD        |    6.652|
+Op<5>          |MemWriteD      |    6.687|
+Op<5>          |MemtoRegD      |    6.592|
+Op<5>          |RegDstD        |    6.503|
+Op<5>          |RegWriteD      |    7.247|
+rst_n          |ALUControlD<0> |    7.271|
+rst_n          |ALUControlD<1> |    8.352|
+rst_n          |ALUControlD<2> |    8.081|
+rst_n          |ALUControlD<3> |    6.534|
+rst_n          |ALUSrcD        |    7.068|
+rst_n          |MemWriteD      |    7.103|
+rst_n          |MemtoRegD      |    7.008|
+rst_n          |RegDstD        |    7.161|
+rst_n          |RegWriteD      |    7.663|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Jun 05 10:53:39 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 125 MB
+
+
+
