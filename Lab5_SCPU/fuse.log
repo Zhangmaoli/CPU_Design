@@ -1,0 +1,43 @@
+Running: C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Verilog HDL/Lab5_SCPU/maintest_isim_beh.exe -prj D:/Verilog HDL/Lab5_SCPU/maintest_beh.prj work.maintest work.glbl 
+ISim M.70d (signature 0x36e8438f)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/ipcore_dir/InstructionMemory.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/SignExtend.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/regfile.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/pc.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/Mux5b.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/Mux.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/MainDecoder.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/ipcore_dir/DataMemory.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/ALUDecoder.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/alu.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/main.v\" into library work
+Analyzing Verilog file \"D:/Verilog HDL/Lab5_SCPU/maintest.v\" into library work
+Analyzing Verilog file \"C:/Xilinx/12.3/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 89628 KB
+Fuse CPU Usage: 171 ms
+Compiling module pc
+Compiling module DIST_MEM_GEN_V5_1(C_FAMILY="spar...
+Compiling module InstructionMemory
+Compiling module MainDecoder
+Compiling module ALUDecoder
+Compiling module regfile
+Compiling module Mux5b
+Compiling module SignExtend
+Compiling module Mux
+Compiling module alu
+Compiling module DIST_MEM_GEN_V5_1(C_FAMILY="spar...
+Compiling module DataMemory
+Compiling module main
+Compiling module maintest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 15 Verilog Units
+Built simulation executable D:/Verilog HDL/Lab5_SCPU/maintest_isim_beh.exe
+Fuse Memory Usage: 99184 KB
+Fuse CPU Usage: 343 ms
