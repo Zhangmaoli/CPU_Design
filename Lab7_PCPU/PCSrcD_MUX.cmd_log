@@ -1,5 +1,0 @@
-xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/PCSrcD_MUX.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/PCSrcD_MUX.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "PCSrcD_MUX.ngc" PCSrcD_MUX.ngd  
-map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o PCSrcD_MUX_map.ncd PCSrcD_MUX.ngd PCSrcD_MUX.pcf 
-par -w -intstyle ise -ol high -t 1 PCSrcD_MUX_map.ncd PCSrcD_MUX.ncd PCSrcD_MUX.pcf 
-trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PCSrcD_MUX.twx PCSrcD_MUX.ncd -o PCSrcD_MUX.twr PCSrcD_MUX.pcf 

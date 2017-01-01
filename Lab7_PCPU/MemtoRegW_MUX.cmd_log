@@ -1,5 +1,0 @@
-xst -intstyle ise -ifn "D:/Verilog HDL/Lab7_PCPU/MemtoRegW_MUX.xst" -ofn "D:/Verilog HDL/Lab7_PCPU/MemtoRegW_MUX.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "MemtoRegW_MUX.ngc" MemtoRegW_MUX.ngd  
-map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MemtoRegW_MUX_map.ncd MemtoRegW_MUX.ngd MemtoRegW_MUX.pcf 
-par -w -intstyle ise -ol high -t 1 MemtoRegW_MUX_map.ncd MemtoRegW_MUX.ncd MemtoRegW_MUX.pcf 
-trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MemtoRegW_MUX.twx MemtoRegW_MUX.ncd -o MemtoRegW_MUX.twr MemtoRegW_MUX.pcf 
